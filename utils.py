@@ -56,21 +56,8 @@ def get_chain(db):
         temperature=0.5,
         convert_system_message_to_human=True,
     )
-
-    # question_generator = LLMChain(llm=llm, prompt=CONDENSE_QUESTION_PROMPT)
-    # doc_chain = load_qa_chain(llm=llm, chain_type='stuff', prompt=QA_PROMPT)
-
     retriever = db.as_retriever(search_type='mmr', search_kwargs={'k': 3})
     memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True, input_key='question') 
-
-    # chain = ConversationalRetrievalChain(
-    #     retriever=retriever,
-    #     question_generator=question_generator,
-    #     combine_docs_chain=doc_chain,
-    #     memory=memory,
-    #     verbose=True,
-    #     return_source_documents=True
-    # )
 
     chain = RetrievalQA.from_chain_type(
         llm=llm,

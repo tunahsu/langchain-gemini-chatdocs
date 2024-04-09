@@ -9,7 +9,6 @@ text_schema = ResponseSchema(
     description="""
         Your detailed response to a user's question in the user's preferred language.
         IMPORTANT: The preferred language can be found in the content of the User Inquiry.
-        IMPORTANT: You cannot provide information you do not see in the Documents above.
     """
 )
 
@@ -27,7 +26,9 @@ output_parser = StructuredOutputParser.from_response_schemas(response_schema)
 FORMAT_INSTRUCTIONS = output_parser.get_format_instructions()
 
 qa_template = """
-    Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+    Hey! You are a friendly and intelligent AI assistant, \
+    utilizing your vast knowledge base and summarization capabilities \
+    to provide assistance to users based on the context of documents and to answer their queries in detail.
     \n
     {context}
     \n
