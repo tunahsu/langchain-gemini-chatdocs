@@ -1,0 +1,22 @@
+{
+    "product_name": "IM30",
+    "product_content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n                        IM30\r\n                        A53 Quad-core ARM嵌入式單板\n\n\n重點特色\n\n3.5” 外形尺寸 (146 mm x 102 mm)\nA53 四核 2.0 GHz\n4GB LPDDR4, 32GB eMMC\nAndroid 11\n集成 LVDS、eDP（可選）\n後置 IO 支持 1 x COM, 2 x USB 2.0, 1 x Micro USB, 1 x LAN ,1 x SD slot\n\n\n\n\n\nCERTIFICATIONS\n\n\n\n\n\n\n\n\n\n\n\n\n產品規格書\n下載資源\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIM30\nA53 Quad-core ARM嵌入式單板\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n產品資訊                                \n\r\n技術規格                                \n\r\n配件                                \n\n\n\n\n\n\n\n\n\n\nA53 四核 2.0 GHz 處理器\nIM30工業主機板提供下一代ARM處理能力和高度通用的工業I/O補充。Cortex A53 處理器是使用最廣泛的低功耗中央處理器，可用於在低功耗情况下需要優異效能的各種設備。這款工業主機板配備Android 11，使客戶能夠輕鬆開發獨特的物聯網應用。\n\n\n\n\n\n\n\n\n全集成緊湊型工業主機板\n該電路板尺寸僅為102mm x 146mm，包括焊接的LPDDR4系統記憶體、eMMC 閃存和多個 I/O 連接選項，提供了强大的計算能力和較小的占地面積。可通過車載SIM卡插槽進行擴展。\n\n\n\n\n\n\n\n\nLVDS 支持\nIM30工業主機板支持LVDS介面解析度高達1920x1080像素。\n\n\n\n\n\n\n\n\n物聯網應用的强大功能\nIM30工業主機板是為滿足現代工業的嚴格要求而設計的，能夠承受全天候運行和環境挑戰。主機板的工作溫度範圍很廣，從-20攝氏度到60攝氏度。\n融程的工業主機板非常適合廣泛的多媒體應用，包括機場、火車站和公車站、購物中心和其他地點的多個標誌顯示。\n\n\n\n\n\n\n\n系統規格\n\n\n\n\n\n\n\n\n處理器\n\n\nARM A53 (Quad Core 2.0GHz) \n\n\n\n\n記憶體\n\n\n4GB LPDDR4  \n\n\n\n\n儲存空間\n\n\neMMC: Onboard 32 GB \n\n\n\n\n作業系統\n\n\nAndroid 11 (Upgradeable to Android 13) \nLinux Yocto 5.10.104 with QT 5.15 (Optional)\nLinux Ubuntu (Optional) \n\n\n\n\n無線通訊網路\n\n\nSupport (Optional) \n\n\n\n\n藍牙\n\n\nSupport (Optional) \n\n\n\n\n無線廣域網路\n\n\n4G/LTE (Optional) \n\n\n\n\n訊號埠\n\n\n\n\n\n\n\n\nUSB埠\n\n\n2 x USB 2.0 Type A \n1 x Micro USB 2.0 OTG \n\n\n\n\n序列埠\n\n\n1 x RS232/422/485 \n\n\n\n\n有線網路\n\n\n1 x RJ45, Optional PoE(PD, 802.3AT)\n \n\n\n\n\n影像\n\n\n1 x Micro HDMI (Optional) \n\n\n\n\nSD卡槽\n\n\n1 x Micro SD card slot (Max to 32GB) \n\n\n\n\nSIM卡槽\n\n\n1 x Micro SIM Card Slot \n\n\n\n\n電源輸入\n\n\n1 x 3-Pin Terminal Block,  12V DC \n\n\n\n\n內部訊號埠\n\n\n\n\n\n\n\n\n電源輸出\n\n\n1 x 5V output (2 Pin Wafer)\n1x 3.3V output (2 Pin Waffer)\n \n\n\n\n\nUSB接口\n\n\n4 x USB 2.0 (2x4 Waffer/per)\n2 x USB 2.0 for Touch (FFC Connector) \n\n\n\n\nUART接口\n\n\n1 x 6 Pin for UART\n1 x 6 Pin for Debug \n\n\n\n\n序列埠\n\n\n1 x RS232/422/485 (2x5 Waffer) \n\n\n\n\n顯示\n\n\n1 x LVDS (DF13) (Optional)\n1 x LVDS (FPC) (Optional)\n1 x EDP (15 Pin Waffer) (Optional) \n\n\n\n\n背光\n\n\n1 x Backlight wafer(7 Pin)  \n\n\n\n\n串行ATA\n\n\n1x M.2 Key-B USB  \n\n\n\n\n數位輸入/輸出\n\n\n1 x 14 Pin DIDO (6 DI, 6 DO, GND, 5V)\n \n\n\n\n\n前控制面板\n\n\n1 x GPIO for 5 key OSD (6 Pin Waffer)\n1 x GPIO For Membrane OSD (2x5 Waffer) \n\n\n\n\n喇叭\n\n\n2 x Speaker (L/R, 2 Pin Waffer) \n\n\n\n\n後備電池\n\n\n1 x RTC Battery \n\n\n\n\n音訊\n\n\n2 x DMIC (4 Pin Waffer/Per)\n1 x Analog MIC (2 Pin Waffer) \n\n\n\n\nCANBus\n\n\n1 x 4 Pin Waffer CANBus With Isolation (CANH, CANL, 5V) (Optional) \n\n\n\n\n積體電路匯流排\n\n\n1 x I2C \n\n\n\n\nANT\n\n\n4 x IPEX connector (Wi-Fi, BT, NFC) \n\n\n\n\n認證\n\n\n\n\n\n\n\n\n認證\n\n\nCE, FCC \n\n\n\n\n機構\n\n\n\n\n\n\n\n\n外觀尺寸\n\n\n146 x 102 mm \n\n\n\n\n環境\n\n\n\n\n\n\n\n\n工作濕度\n\n\n95% RH, Non-Condensing \n\n\n\n\n工作溫度\n\n\n-20°C to 60°C \n\n\n\n\n儲存溫度\n\n\n-25°C to 65°C \n\n\n\n\n配件\n\n\n\n\n\n\n\n\n配件\n\n\nManual \n\n\n\n\n\nOPTIONAL ACCESSORIES\n\n\nSATA Signal \n\n\n\n\n\n\nModel Name: MBK-SATA20\nPart Number: 94H007Z070K0\nQuantity: 1\n\n\n\nComport Cable\n\n\n\n\n\n\nModel Name: MBK-D9M180\nPart Number: 94G309E100E1\nQuantity :1 (For 3.5\" Embedded Board)Quantity :2 (For Mini-ITX Embedded Board)\n\n\n\nUSB Cable\n\n\n\n\n\n\nModel Name: MBK-USBTA25\nPart Number: 94E808E080K0\nQuantity: 1\n\n\n\nSATA Power\n\n\n\n\n\n\nModel Name: MBK-SATA15P\nPart Number: 94HE08Z150E0\nQuantity: 1\n\n\n\n\n\n\n",
+    "product_images": [
+        {
+            "alt": "IM30 | A53 Quad-core ARM嵌入式單板 | Winmate",
+            "url": "https://www.winmate.com.tw/upload/Product/L4/Product-IM30_450_45-L4-I.png"
+        },
+        {
+            "alt": "IM30 | A53 Quad-core ARM嵌入式單板 | Winmate",
+            "url": "https://www.winmate.com.tw/upload/Product/L4/Product-IM30_450_F-L4-O-202204181748410.png"
+        },
+        {
+            "alt": "IM30 | A53 Quad-core ARM嵌入式單板 | Winmate",
+            "url": "https://www.winmate.com.tw/upload/Product/L4/Product-IM30_450_B-L4-O-202204181748411.png"
+        },
+        {
+            "alt": "IM30 | A53 Quad-core ARM嵌入式單板 | Winmate",
+            "url": "https://www.winmate.com.tw/upload/Product/L4/Product-IM30_450_BM-L4-O-202204181748412.png"
+        }
+    ]
+}

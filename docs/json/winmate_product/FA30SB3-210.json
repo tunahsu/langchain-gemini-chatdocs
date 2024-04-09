@@ -1,0 +1,22 @@
+{
+    "product_name": "FA30SB3-210",
+    "product_content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n                        FA30SB3-210\r\n                        NXP i.MX6 Dual Core ARM嵌入式電腦\n\n\n重點特色\n\nNXP i.MX6 Dual Core, 1GHz（可選四核）\n最高 2 GB LPDDR3\n16GB eMMC\n1 x RS-232/422/485，1 x CANBus，1 x USB A-Type，1 x RJ45（可選 PoE）\nMicro HDMI\n可選DIDO\n\n\n\n\n\nCERTIFICATIONS\n\n\n\n\n\n\n\n\n\n\n\n\n產品規格書\n下載資源\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFA30SB3-210\nNXP i.MX6 Dual Core ARM嵌入式電腦\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n產品資訊                                \n\r\n技術規格                                \n\n\n\n\n\n\n\n\n\n\nNXP i.MX6雙核1GHz（可選四核）\n與採用CISC（複雜指令集計算）架構的x86平台不同，ARM主板採用RISC（精簡指令集計算）架構。 RISC體系結構的最重要特徵是超低功耗和移動性，超小尺寸設計、低成本，而低成本和低功率不等於低性能。\n\n\n\n\n\n\n\n\n支持Android和Linux操作系統\n融程電的ARM計算解決方案提供了一個開放和統一的開發平台，可在啟用基於ARM的嵌入式應用程序時最大程度地減少開發工作並提高資源效率。\n\n\n\n\n\n\n\n\n外部I/O上的USB OTG（On-The-Go）接口\nBCM PPC10W-6MXQ ARM工業電腦的外部I/O端口增加了一個USB OTG接口，使系統能夠發揮主機或客戶端的作用。只要連接兩個USB設備，並且其中一個是USB OTG兼容設備，就可以建立通信。該功能對低功耗移動設備來說是有效的，主要用於Android操作系統。\n\n\n\n\n\n\n\n系統規格\n\n\n\n\n\n\n\n\n處理器\n\n\nNXP i.MX6 Dual Core, 1.0GHz \n\n\n\n\n記憶體\n\n\n1GB \n2GB (Optional) \n\n\n\n\n儲存空間\n\n\neMMC: Onboard 16 GB \neMMC: Onboard 32 GB (Optional) \n\n\n\n\n作業系統\n\n\nLinux Ubuntu 18.04 (Optional)\nAndroid 6.0 (Optional)\nDebian 7.0 (Optional)\nLinux 4.1.15 QT 5.5  (Optional) \n\n\n\n\n藍牙\n\n\nSupport (Optional) \n\n\n\n\n機構\n\n\n\n\n\n\n\n\n外觀尺寸\n\n\n224 x 47 x 127 mm \n\n\n\n\n重量\n\n\n1.0 kg \n\n\n\n\n安裝\n\n\nDesk Mount\nWall Mount \n\n\n\n\n外殼\n\n\nAluminum Housing \n\n\n\n\n冷卻系統\n\n\nFanless design \n\n\n\n\n環境\n\n\n\n\n\n\n\n\n工作濕度\n\n\n10% to 90% RH, Non-Condensing \n\n\n\n\n工作溫度\n\n\n-20°C to 60°C \n\n\n\n\n儲存溫度\n\n\n-20°C to 60°C \n\n\n\n\n認證\n\n\n\n\n\n\n\n\n認證\n\n\nCE, FCC \n\n\n\n\n訊號埠\n\n\n\n\n\n\n\n\nUSB埠\n\n\n1 x USB 2.0 (Type-A)\n1 x USB OTG (Micro USB) \n\n\n\n\n序列埠\n\n\n1 x RS232/422/485 (Default RS232)  \n2 x RS232/422/485 (Default RS232) (Optional) \n\n\n\n\n有線網路\n\n\n1 x LAN RJ45 Connector with PoE(PD, 802.3 at) \n\n\n\n\n影像\n\n\n1 x Micro HDMI \n\n\n\n\nSD卡槽\n\n\n1 x Micro SD card Slot \n\n\n\n\n指示燈\n\n\n1 x LED Indicator for power \n\n\n\n\n數位輸入/輸出\n\n\n1 x 8pin(1x8) for DIO (3 x DI, 3 x DO, GND, 3.3V) (Optional) \n\n\n\n\nCANBUS\n\n\n1 x Mini PCIE \n\n\n\n\n電源輸入\n\n\n1 x 12V DC, 2-Pin Terminal Block \n\n\n\n\n控制\n\n\n\n\n\n\n\n\n按鈕\n\n\n1 x Power Button with LED Indicator (Optional) \n\n\n\n\n配件\n\n\n\n\n\n\n\n\n配件\n\n\n100~240V AC to DC Adapter\nPower Cord\nTerminal Block to 2.5Ø Female Adapter Cable \n\n\n\n\n電源\n\n\n\n\n\n\n\n\n電源規格\n\n\n12V DC \n\n\n\n\n電源適配器\n\n\n12V 50W \n\n\n\n\nPOE\n\n\nPoE (PD): follows IEEE 802.3at (25 W) \n\n\n\n\n\n\n",
+    "product_images": [
+        {
+            "alt": "FA30SB3-210 | NXP i.MX6 Dual Core ARM嵌入式電腦 | Winmate",
+            "url": "https://www.winmate.com.tw/upload/Product/L4/Product-FA30SB3-210-45-L4-I.png"
+        },
+        {
+            "alt": "FA30SB3-210 | NXP i.MX6 Dual Core ARM嵌入式電腦 | Winmate",
+            "url": "https://www.winmate.com.tw/upload/Product/L4/Product-FA30SB3-210-F-L4-O-202011181409020.png"
+        },
+        {
+            "alt": "FA30SB3-210 | NXP i.MX6 Dual Core ARM嵌入式電腦 | Winmate",
+            "url": "https://www.winmate.com.tw/upload/Product/L4/Product-FA30SB3-210-45-2-L4-O-202011181409021.png"
+        },
+        {
+            "alt": "FA30SB3-210 | NXP i.MX6 Dual Core ARM嵌入式電腦 | Winmate",
+            "url": "https://www.winmate.com.tw/upload/Product/L4/Product-FA30SB3-210-io-L4-O-202011181409022.png"
+        }
+    ]
+}
