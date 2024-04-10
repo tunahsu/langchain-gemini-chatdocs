@@ -11,8 +11,9 @@ def clear_chat_history():
 
 
 def user_query(user_question, chain):
-    response = chain({'query': user_question})
-    return response
+    answer = chain(user_question)['answer']
+    print(answer)
+    return answer
 
 
 def main():
@@ -75,22 +76,22 @@ def main():
     if st.session_state.messages[-1]['role'] != 'assistant':
         with st.chat_message('assistant'):
             with st.spinner('Thinking...'):
-                response = user_query(prompt, st.session_state.chain)
-                text = output_parser.parse(response['result'])['text']
-                picture = output_parser.parse(response['result'])['picture']
+                answer = user_query(prompt, st.session_state.chain)
+                text = output_parser.parse(answer)['text']
+                picture = output_parser.parse(answer)['picture']
                 st.markdown(text)
 
                 if picture != 'NO_PICTURE':
-                    print(picture)
                     cols = st.columns(len(picture))
+                    print(picture, len(picture))
                     cols_n = 0
 
                     for k, v in picture.items():
                         with cols[cols_n]:
-                            st.image(v)
+                            st.image(k)
                             cols_n += 1
 
-        if response is not None:
+        if answer is not None:
             message = {'role': 'assistant', 'content': text}
             st.session_state.messages.append(message)
 

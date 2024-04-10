@@ -3,11 +3,13 @@ import os
 import google.generativeai as genai
 
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
-from langchain.chains import RetrievalQA
-from prompts import QA_PROMPT
+from langchain.chains import RetrievalQA, ConversationalRetrievalChain
+from prompts import condense_prompt, qa_prompt
 from langchain.memory import ConversationBufferMemory
 from langchain_community.document_loaders import PyPDFLoader, TextLoader, DirectoryLoader
 from langchain_community.vectorstores import FAISS
+from langchain.retrievers import ContextualCompressionRetriever
+from langchain.retrievers.document_compressors import LLMChainExtractor
 from dotenv import load_dotenv
 from webscraper import getGeneralWebData
 
@@ -53,22 +55,21 @@ def get_chain(db):
     llm = ChatGoogleGenerativeAI(
         model='gemini-pro',
         client=genai,
-        temperature=0.5,
+        temperature=1.0,
         convert_system_message_to_human=True,
     )
+    memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True) 
     retriever = db.as_retriever(search_type='mmr', search_kwargs={'k': 3})
-    memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True, input_key='question') 
+    # compressor = LLMChainExtractor.from_llm(ChatGoogleGenerativeAI(model='gemini-pro', temperature=0))
+    # compression_retriever = ContextualCompressionRetriever(base_compressor=compressor, base_retriever=retriever)
 
-    chain = RetrievalQA.from_chain_type(
-        llm=llm,
-        chain_type='stuff',
+    chain = ConversationalRetrievalChain.from_llm(
+        llm=llm, 
         retriever=retriever,
-        verbose=True,
-        chain_type_kwargs={
-            'verbose': True,
-            'prompt': QA_PROMPT,
-            'memory': memory,
-        }
+        memory=memory,
+        condense_question_prompt=condense_prompt,
+        combine_docs_chain_kwargs={'prompt': qa_prompt},
+        verbose=True
     )
 
     return chain
