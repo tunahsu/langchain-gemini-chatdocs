@@ -12,17 +12,17 @@ def clear_chat_history():
 
 def user_query(user_question, chain):
     answer = chain(user_question)['answer']
-    print(answer)
+    # print(answer)
     return answer
 
 
 def main():
     st.set_page_config(page_title='Gemini Docs Chatbot', page_icon='🤖')
 
-    # Sidebar for uploading PDF files
     with st.sidebar:
         st.header('Menu')
 
+        # Upload PDF files
         with st.expander('PDF'):
             pdf_docs = st.file_uploader('Upload PDF Files', type=['pdf'], accept_multiple_files=True)
         
@@ -34,6 +34,7 @@ def main():
                         st.session_state.chain = get_chain(db)
                         st.session_state.messages.append({'role': 'assistant', 'content': "Processing complete ✅"})
 
+        # Enter web URL
         with st.expander('URL'):
             web_url = st.text_input('Enter a web URL')
 
@@ -45,13 +46,7 @@ def main():
                         st.session_state.chain = get_chain(db)
                         st.session_state.messages.append({'role': 'assistant', 'content': "Processing complete ✅"})
 
-        if st.button('Load Winmate Product Data'):
-            with st.spinner('Processing...'):
-                docs = get_content(web_url, 'winmate_product')
-                db = get_db(docs)
-                st.session_state.chain = get_chain(db)
-                st.session_state.messages.append({'role': 'assistant', 'content': "Processing complete ✅"})
-
+        # Clear database and chat history
         if st.button('Clear'):
             clear_chat_history()
             for f in glob.glob('faiss_db/*'):
@@ -60,19 +55,22 @@ def main():
     # Main content 
     st.title('Chat with Docs using Gemini 🤖')
 
+    # Initialize chat history
     if 'messages' not in st.session_state.keys():
         clear_chat_history()
 
+    # Show chat messages
     for message in st.session_state.messages:
         with st.chat_message(message['role']):
             st.write(message['content'])
 
+    # Add user input to message session
     if prompt := st.chat_input(disabled=False if 'chain' in st.session_state.keys() else True):
         st.session_state.messages.append({'role': 'user', 'content': prompt})
         with st.chat_message('user'):
             st.write(prompt)
 
-    # Display chat messages and bot response
+    # Add AI response to message session
     if st.session_state.messages[-1]['role'] != 'assistant':
         with st.chat_message('assistant'):
             with st.spinner('Thinking...'):
@@ -83,10 +81,9 @@ def main():
 
                 if picture != 'NO_PICTURE':
                     cols = st.columns(len(picture))
-                    print(picture, len(picture))
                     cols_n = 0
 
-                    for k, v in picture.items():
+                    for k, _ in picture.items():
                         with cols[cols_n]:
                             st.image(k)
                             cols_n += 1

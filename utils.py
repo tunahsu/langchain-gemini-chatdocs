@@ -1,4 +1,7 @@
 import os
+import json
+import requests
+import datetime
 
 import google.generativeai as genai
 
@@ -6,15 +9,44 @@ from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmb
 from langchain.chains import RetrievalQA, ConversationalRetrievalChain
 from prompts import condense_prompt, qa_prompt
 from langchain.memory import ConversationBufferMemory
-from langchain_community.document_loaders import PyPDFLoader, TextLoader, DirectoryLoader
+from langchain_community.document_loaders import PyPDFLoader, TextLoader, DirectoryLoader, WebBaseLoader
 from langchain_community.vectorstores import FAISS
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import LLMChainExtractor
+from bs4 import BeautifulSoup
+from urllib.parse import urljoin
 from dotenv import load_dotenv
-from webscraper import getGeneralWebData
+
 
 load_dotenv()
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
+
+
+def get_web_data(url):
+    try:
+        res = requests.get(url=url)
+    except requests.RequestException as e:
+        raise e
+    
+    html_page = res.content
+    soup = BeautifulSoup(html_page, features='html.parser')
+
+    loader = WebBaseLoader(url)
+    docs = loader.load()
+
+    content = docs[0].page_content
+    imgs = soup.find_all('img')
+
+    data = {
+        'title': soup.title.get_text(),
+        'content': content,
+        'images': [{'alt': img.get('alt'), 'url': urljoin(url, img.get('src'))} for img in imgs]
+    }
+
+    with open(os.path.join('docs/json/', f'{datetime.datetime.now().strftime("%Y%m%d%H%M%S")}.json'), 'w', encoding='UTF-8') as f: 
+        json.dump(data, f, ensure_ascii=False, indent = 4)
+
+    return f.name
 
 
 def get_content(source, type):
@@ -29,13 +61,8 @@ def get_content(source, type):
         return pages
     
     elif type == 'url':
-        file = getGeneralWebData(source)
-        loader = TextLoader(file)
-        docs = loader.load()
-        return docs
-    
-    elif type == 'winmate_product':
-        loader = DirectoryLoader('docs/json/winmate_product/', glob='**/*.json', loader_cls=TextLoader)
+        file = get_web_data(source)
+        loader = TextLoader(file, encoding='UTF-8')
         docs = loader.load()
         return docs
         
