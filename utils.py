@@ -9,7 +9,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmb
 from langchain.chains import RetrievalQA, ConversationalRetrievalChain
 from prompts import condense_prompt, qa_prompt
 from langchain.memory import ConversationBufferMemory
-from langchain_community.document_loaders import PyPDFLoader, TextLoader, DirectoryLoader, WebBaseLoader
+from langchain_community.document_loaders import PyPDFLoader, TextLoader, WebBaseLoader
 from langchain_community.vectorstores import FAISS
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import LLMChainExtractor
