@@ -2,6 +2,9 @@
 
 This is a Language Model (LLM) application built with LangChain + Streamlit, utilizing Google's powerful language model, Gemini Pro. The application allows users to upload multiple PDFs or web content and generate responses to their queries based on the uploaded content.
 
+<img src="https://i.imgur.com/EA5Cn3g.png" width="70%">
+
+Online Demo: [langchain-gemini-chatdocs](https://langchain-gemini-chatdocs.streamlit.app/)
 
 ## Installation
 
