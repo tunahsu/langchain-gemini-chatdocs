@@ -31,7 +31,7 @@ def get_web_data(url):
     html_page = res.content
     soup = BeautifulSoup(html_page, features='html.parser')
 
-    loader = WebBaseLoader(url)
+    loader = WebBaseLoader(url, bs_get_text_kwargs={'separator': ' ', 'strip': True})
     docs = loader.load()
 
     content = docs[0].page_content

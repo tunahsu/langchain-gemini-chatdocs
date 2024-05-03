@@ -57,3 +57,5 @@ qa_prompt = PromptTemplate(
     input_variables=['context', 'question'],
     partial_variables={'format_instructions': FORMAT_INSTRUCTIONS}
 )
+
+welcome_template = 'Let me read some documents and ask me some questions!'
