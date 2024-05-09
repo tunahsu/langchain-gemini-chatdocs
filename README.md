@@ -1,4 +1,4 @@
-# LLM Application based on Google Gemini
+# LLM Application Based on Google Gemini
 
 This is a Language Model (LLM) application built with LangChain + Streamlit, utilizing Google's powerful language model, Gemini Pro. The application allows users to upload multiple PDFs or web content and generate responses to their queries based on the uploaded content.
 
